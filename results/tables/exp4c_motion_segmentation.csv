@@ -1,0 +1,4 @@
+source,method,ms/frame,Precision,Recall,F1
+vtest.avi,mog2,27.709873143566,,,
+vtest.avi,knn,31.402688317948794,,,
+vtest.avi,running_avg,12.219911620484663,,,

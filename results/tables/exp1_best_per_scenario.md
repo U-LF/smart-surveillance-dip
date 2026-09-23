@@ -1,0 +1,6 @@
+| scenario      | filter          |   PSNR |   SSIM |      ms |
+|:--------------|:----------------|-------:|-------:|--------:|
+| gaussian_s15  | nlm             | 28.507 |  0.795 | 333.654 |
+| gaussian_s30  | gaussian        | 24.468 |  0.676 |   0.962 |
+| saltpepper_20 | adaptive_median | 29.416 |  0.925 |  60.318 |
+| saltpepper_5  | adaptive_median | 31.831 |  0.945 |  60.707 |

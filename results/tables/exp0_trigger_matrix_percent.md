@@ -1,0 +1,13 @@
+| scenario       |   impulse |   noise |   periodic |   dark |   dark_regions |   lost_blocks |
+|:---------------|----------:|--------:|-----------:|-------:|---------------:|--------------:|
+| clean          |         0 |       2 |          5 |      0 |              0 |             0 |
+| gaussian_s15   |         0 |     100 |          5 |      0 |              0 |             0 |
+| gaussian_s30   |         0 |     100 |          5 |      0 |              0 |             0 |
+| saltpepper_5   |       100 |     100 |          5 |      0 |              0 |             0 |
+| saltpepper_20  |       100 |     100 |          0 |      0 |              0 |             0 |
+| periodic       |         0 |       2 |        100 |      0 |              0 |             0 |
+| motion_blur    |         0 |       0 |          5 |      0 |              0 |             0 |
+| low_light      |         0 |       0 |          3 |    100 |              0 |             0 |
+| uneven_light   |         0 |       0 |          5 |      2 |              5 |             2 |
+| block_loss     |         0 |       2 |          2 |      0 |              2 |           100 |
+| night_compound |       100 |      53 |          5 |    100 |              0 |             0 |

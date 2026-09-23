@@ -1,0 +1,45 @@
+# ---------------------------------------------------------------- Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# ---------------------------------------------------------------- Environments
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# ---------------------------------------------------------------- Tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.coverage
+htmlcov/
+
+# ---------------------------------------------------------------- Editors / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+._*
+Thumbs.db
+
+# ---------------------------------------------------------------- Project data
+# Datasets and model weights are downloaded by scripts/download_data.py
+# (~190 MB) and must never be committed.
+data/*
+!data/.gitkeep
+# interrupted downloads from scripts/download_data.py
+*.part
+
+# ---------------------------------------------------------------- Results
+# Tables (csv/md/tex) and figures (png/pdf) ARE committed: they are the
+# evidence cited in the report. Only heavy demo video output is excluded.
+results/demo/*.mp4
+results/demo/*.avi
