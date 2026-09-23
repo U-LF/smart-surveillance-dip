@@ -23,10 +23,13 @@ plt.rcParams.update({"figure.dpi": 120, "savefig.dpi": 200, "font.size": 9,
                      "axes.grid": True, "grid.alpha": 0.3, "savefig.bbox": "tight"})
 
 
-def parse_args(desc: str, default_n: int = 40, quick_n: int = 8):
+def parse_args(desc: str, default_n: int = 40, quick_n: int = 8, extra=None):
+    """Shared CLI. `extra` is an optional callable(parser) for per-experiment flags."""
     ap = argparse.ArgumentParser(description=desc)
     ap.add_argument("--n", type=int, default=None, help="number of Penn-Fudan images")
     ap.add_argument("--quick", action="store_true", help="small smoke-test run")
+    if extra is not None:
+        extra(ap)
     a = ap.parse_args()
     a.n = a.n or (quick_n if a.quick else default_n)
     ensure_dirs()

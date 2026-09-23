@@ -94,7 +94,7 @@ def main():
             best_q, uni_rec, uni_bytes = q, r, n
         m = C.roi_mask_from_boxes(im.shape, s.boxes, 0)
         for name, rec, n in (("ROI (q90 people / q15 bg)", roi_rec, roi_bytes),
-                             (f"uniform JPEG (same size)", uni_rec, uni_bytes)):
+                             ("uniform JPEG (same size)", uni_rec, uni_bytes)):
             rows.append({"scheme": name, "bpp": C.bpp(n, im.shape), "PSNR_people": psnr(im[m], rec[m]),
                          "PSNR_background": psnr(im[~m], rec[~m]), "PSNR_frame": psnr(im, rec),
                          "uniform_q": best_q})

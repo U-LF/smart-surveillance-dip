@@ -9,9 +9,9 @@ Three interchangeable detectors with one interface `detect(img) -> [Detection]`:
                      Detects persons AND vehicles (car, bus, truck, motorbike, bicycle).
   UltralyticsDetector (optional) YOLOv8/YOLO11 if `pip install ultralytics` is done.
 
-The brief lists YOLO / Faster R-CNN as optional; YOLOv4-tiny is chosen as the
-default because it satisfies the 'resource constraints vs performance'
-requirement (it runs on a laptop CPU / Raspberry-Pi-class edge device).
+YOLOv4-tiny is the default because it satisfies the 'resource constraints vs
+performance' requirement: it runs on a laptop CPU / Raspberry-Pi-class edge
+device with no GPU and no PyTorch.
 """
 from __future__ import annotations
 

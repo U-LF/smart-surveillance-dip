@@ -119,7 +119,7 @@ class DCTCodec:
         zz = Q.reshape(Q.shape[0], Q.shape[1], 64)[..., _ZZ]  # zig-zag scan
         return zz, ch.shape
 
-    def _decode_channel(self, zz, padded_shape, table, out_shape):
+    def _decode_channel(self, zz, table, out_shape):
         flat = np.zeros_like(zz)
         flat[..., _ZZ] = zz
         Q = flat.reshape(zz.shape[0], zz.shape[1], 8, 8).astype(np.float64)
@@ -138,9 +138,9 @@ class DCTCodec:
             chans.append((ch, self.tq_c, ch.shape))
         streams, meta = [], []
         for ch, table, shp in chans:
-            zz, pshape = self._encode_channel(ch, table)
+            zz, _ = self._encode_channel(ch, table)
             streams.append(zz)
-            meta.append((zz.shape, pshape, shp))
+            meta.append((zz.shape, shp))
         payload = zlib.compress(b"".join(self._serialize(s) for s in streams), 9)
         return payload, (meta, (h, w))
 
@@ -165,12 +165,12 @@ class DCTCodec:
         meta, (h, w) = header
         raw = np.frombuffer(zlib.decompress(payload), np.int16)
         chans, off = [], 0
-        for i, (zshape, pshape, shp) in enumerate(meta):
+        for i, (zshape, shp) in enumerate(meta):
             n = int(np.prod(zshape))
             zz = self._deserialize(raw[off:off + n], zshape)
             off += n
             table = self.tq_l if i == 0 else self.tq_c
-            ch = self._decode_channel(zz, pshape, table, shp)
+            ch = self._decode_channel(zz, table, shp)
             if ch.shape != (h, w):
                 ch = cv2.resize(ch, (w, h), interpolation=cv2.INTER_LINEAR)
             chans.append(ch)

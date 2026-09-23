@@ -21,6 +21,11 @@ from surveillance.recognition import YOLOTinyDetector
 from surveillance.segmentation import MotionSegmenter
 
 
+def _source_arg(ap):
+    ap.add_argument("--source", default="vtest", choices=["vtest", "caviar"],
+                    help="benchmark clip (default vtest.avi, 768x576)")
+
+
 def peak_memory_mb() -> float:
     """Peak resident memory of this process, on Windows, Linux and macOS."""
     try:
@@ -38,17 +43,27 @@ def peak_memory_mb() -> float:
         return float("nan")
 
 
-def frames_source(n):
-    caviar = available_caviar()
-    if caviar:
+def frames_source(n, source: str = "vtest"):
+    """Benchmark frames.
+
+    The source is chosen explicitly, never by 'whichever dataset happens to be
+    on disk': vtest.avi is 768x576 and CAVIAR is 384x288, so silently switching
+    would make latency numbers incomparable between runs. vtest.avi is the
+    default because every published figure uses it.
+    """
+    if source == "caviar":
+        caviar = available_caviar()
+        if not caviar:
+            raise SystemExit("no CAVIAR sequences on disk - run: "
+                             "python scripts/download_data.py --caviar")
         seq = CaviarSequence(caviar[0])
         return f"CAVIAR/{caviar[0]}", [fr for k, (_, fr, _) in enumerate(seq) if k < n]
     return "vtest.avi", [f for _, f in iter_video(VIDEO_DIR / "vtest.avi", max_frames=n)]
 
 
 def main():
-    a = parse_args(__doc__, default_n=120, quick_n=20)
-    src, frames = frames_source(a.n)
+    a = parse_args(__doc__, default_n=120, quick_n=20, extra=_source_arg)
+    src, frames = frames_source(a.n, a.source)
     g = np.random.default_rng(7)
     night = [D.SCENARIOS["night_compound"](f, g) for f in frames]
     h, w = frames[0].shape[:2]

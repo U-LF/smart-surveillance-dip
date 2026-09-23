@@ -9,30 +9,30 @@
     "impulse:median3",
     "lowlight:gamma+clahe"
    ],
-   "ms": 1071.1,
+   "ms": 115.6,
    "timings": {
-    "diagnose+prefix": 71.4,
-    "resize": 6.5,
-    "restore": 403.9,
-    "detect": 580.7,
-    "segment": 2.0,
-    "protect": 0.3,
-    "compress": 6.4
+    "diagnose+prefix": 15.7,
+    "resize": 1.0,
+    "restore": 40.5,
+    "detect": 56.2,
+    "segment": 0.6,
+    "protect": 0.2,
+    "compress": 1.3
    },
    "detections": [
     {
      "label": "person",
-     "score": 0.849,
+     "score": 0.85,
      "box": [
       645.3,
-      240.0,
+      241.3,
       681.3,
-      321.3
+      322.7
      ]
     },
     {
      "label": "person",
-     "score": 0.802,
+     "score": 0.809,
      "box": [
       254.7,
       220.0,
@@ -42,17 +42,17 @@
     },
     {
      "label": "person",
-     "score": 0.639,
+     "score": 0.631,
      "box": [
       500.0,
-      152.0,
+      153.3,
       528.0,
-      224.0
+      225.3
      ]
     },
     {
      "label": "car",
-     "score": 0.898,
+     "score": 0.896,
      "box": [
       730.7,
       48.0,
@@ -62,7 +62,7 @@
     },
     {
      "label": "truck",
-     "score": 0.696,
+     "score": 0.712,
      "box": [
       652.0,
       42.7,
@@ -71,8 +71,7 @@
      ]
     }
    ],
-   "bytes": 31634,
-   "hmac": "80777b300061ecb9333e7bc9234af29cd63c2ab5a8e9e45f002219852a4fc15f"
+   "bytes": 31613
   },
   {
    "frame": 1,
@@ -80,20 +79,20 @@
     "impulse:median3",
     "lowlight:gamma+clahe"
    ],
-   "ms": 503.1,
+   "ms": 61.5,
    "timings": {
-    "diagnose+prefix": 56.4,
-    "resize": 2.5,
-    "restore": 206.0,
-    "detect": 229.7,
-    "segment": 6.1,
-    "protect": 0.4,
-    "compress": 2.1
+    "diagnose+prefix": 15.0,
+    "resize": 1.7,
+    "restore": 24.2,
+    "detect": 18.7,
+    "segment": 0.5,
+    "protect": 0.1,
+    "compress": 1.3
    },
    "detections": [
     {
      "label": "person",
-     "score": 0.969,
+     "score": 0.967,
      "box": [
       257.3,
       218.7,
@@ -107,23 +106,23 @@
      "box": [
       637.3,
       242.7,
-      677.3,
+      678.7,
       318.7
      ]
     },
     {
      "label": "person",
-     "score": 0.725,
+     "score": 0.731,
      "box": [
-      500.0,
+      498.7,
       160.0,
-      526.7,
+      525.3,
       230.7
      ]
     },
     {
      "label": "car",
-     "score": 0.923,
+     "score": 0.921,
      "box": [
       730.7,
       49.3,
@@ -133,17 +132,16 @@
     },
     {
      "label": "truck",
-     "score": 0.653,
+     "score": 0.647,
      "box": [
       650.7,
       42.7,
       720.0,
-      97.3
+      96.0
      ]
     }
    ],
-   "bytes": 31880,
-   "hmac": "53a784e007ab961366ea7f6dd778d1f97f9749d59cc3ef766d434b3538d864b0"
+   "bytes": 31822
   },
   {
    "frame": 2,
@@ -151,22 +149,22 @@
     "impulse:median3",
     "lowlight:gamma+clahe"
    ],
-   "ms": 507.6,
+   "ms": 58.4,
    "timings": {
-    "diagnose+prefix": 57.2,
-    "resize": 6.6,
-    "restore": 202.3,
-    "detect": 229.0,
-    "segment": 6.1,
-    "protect": 0.3,
-    "compress": 6.1
+    "diagnose+prefix": 15.7,
+    "resize": 1.1,
+    "restore": 23.1,
+    "detect": 16.6,
+    "segment": 0.5,
+    "protect": 0.1,
+    "compress": 1.3
    },
    "detections": [
     {
      "label": "person",
-     "score": 0.953,
+     "score": 0.956,
      "box": [
-      262.7,
+      261.3,
       216.0,
       301.3,
       306.7
@@ -174,21 +172,21 @@
     },
     {
      "label": "person",
-     "score": 0.778,
+     "score": 0.784,
      "box": [
       634.7,
-      245.3,
+      244.0,
       672.0,
       318.7
      ]
     },
     {
      "label": "person",
-     "score": 0.748,
+     "score": 0.78,
      "box": [
-      500.0,
+      498.7,
       160.0,
-      528.0,
+      525.3,
       230.7
      ]
     },
@@ -204,17 +202,16 @@
     },
     {
      "label": "truck",
-     "score": 0.66,
+     "score": 0.662,
      "box": [
       650.7,
       42.7,
       717.3,
-      96.0
+      97.3
      ]
     }
    ],
-   "bytes": 31923,
-   "hmac": "f7eddbb7addf33660d91eccca5cd60b9a330b5bb1641af0a1c6b39e92655d2f3"
+   "bytes": 31998
   },
   {
    "frame": 3,
@@ -222,20 +219,20 @@
     "impulse:median3",
     "lowlight:gamma+clahe"
    ],
-   "ms": 508.3,
+   "ms": 55.4,
    "timings": {
-    "diagnose+prefix": 61.1,
-    "resize": 6.5,
-    "restore": 201.5,
-    "detect": 231.1,
-    "segment": 1.7,
-    "protect": 0.3,
-    "compress": 6.1
+    "diagnose+prefix": 16.3,
+    "resize": 1.1,
+    "restore": 20.4,
+    "detect": 15.8,
+    "segment": 0.4,
+    "protect": 0.1,
+    "compress": 1.2
    },
    "detections": [
     {
      "label": "person",
-     "score": 0.913,
+     "score": 0.903,
      "box": [
       617.3,
       241.3,
@@ -248,14 +245,14 @@
      "score": 0.847,
      "box": [
       277.3,
-      220.0,
+      218.7,
       306.7,
       298.7
      ]
     },
     {
      "label": "person",
-     "score": 0.551,
+     "score": 0.546,
      "box": [
       494.7,
       158.7,
@@ -265,7 +262,7 @@
     },
     {
      "label": "car",
-     "score": 0.924,
+     "score": 0.929,
      "box": [
       730.7,
       49.3,
@@ -275,7 +272,7 @@
     },
     {
      "label": "truck",
-     "score": 0.642,
+     "score": 0.627,
      "box": [
       652.0,
       42.7,
@@ -284,8 +281,7 @@
      ]
     }
    ],
-   "bytes": 31642,
-   "hmac": "7680630878213a85fee1dd7fbae18c3c380fd909e48f73cf93e94c3fed9449b3"
+   "bytes": 31757
   },
   {
    "frame": 4,
@@ -293,40 +289,40 @@
     "impulse:median3",
     "lowlight:gamma+clahe"
    ],
-   "ms": 512.0,
+   "ms": 57.6,
    "timings": {
-    "diagnose+prefix": 64.5,
-    "resize": 2.6,
-    "restore": 207.2,
-    "detect": 229.5,
-    "segment": 1.8,
-    "protect": 0.3,
-    "compress": 6.1
+    "diagnose+prefix": 14.3,
+    "resize": 1.9,
+    "restore": 22.4,
+    "detect": 17.3,
+    "segment": 0.5,
+    "protect": 0.1,
+    "compress": 1.2
    },
    "detections": [
     {
      "label": "person",
-     "score": 0.907,
+     "score": 0.915,
      "box": [
-      601.3,
-      241.3,
-      644.0,
+      602.7,
+      240.0,
+      645.3,
       321.3
      ]
     },
     {
      "label": "person",
-     "score": 0.838,
+     "score": 0.826,
      "box": [
       281.3,
-      212.0,
+      210.7,
       313.3,
       300.0
      ]
     },
     {
      "label": "person",
-     "score": 0.708,
+     "score": 0.711,
      "box": [
       494.7,
       161.3,
@@ -336,7 +332,7 @@
     },
     {
      "label": "car",
-     "score": 0.904,
+     "score": 0.902,
      "box": [
       730.7,
       49.3,
@@ -346,7 +342,7 @@
     },
     {
      "label": "truck",
-     "score": 0.652,
+     "score": 0.675,
      "box": [
       652.0,
       44.0,
@@ -355,8 +351,7 @@
      ]
     }
    ],
-   "bytes": 31856,
-   "hmac": "4dea3aa97aa141aebd14e66a61d07bfad34f5a9b1d4e6273608642239adf846f"
+   "bytes": 32019
   },
   {
    "frame": 5,
@@ -364,20 +359,20 @@
     "impulse:median3",
     "lowlight:gamma+clahe"
    ],
-   "ms": 515.8,
+   "ms": 59.7,
    "timings": {
-    "diagnose+prefix": 65.3,
-    "resize": 9.2,
-    "restore": 202.7,
-    "detect": 230.2,
-    "segment": 1.9,
-    "protect": 0.3,
-    "compress": 6.2
+    "diagnose+prefix": 16.4,
+    "resize": 1.1,
+    "restore": 23.0,
+    "detect": 17.3,
+    "segment": 0.5,
+    "protect": 0.1,
+    "compress": 1.3
    },
    "detections": [
     {
      "label": "person",
-     "score": 0.856,
+     "score": 0.84,
      "box": [
       284.0,
       212.0,
@@ -387,7 +382,7 @@
     },
     {
      "label": "person",
-     "score": 0.706,
+     "score": 0.708,
      "box": [
       600.0,
       242.7,
@@ -397,7 +392,7 @@
     },
     {
      "label": "person",
-     "score": 0.57,
+     "score": 0.549,
      "box": [
       492.0,
       160.0,
@@ -407,7 +402,7 @@
     },
     {
      "label": "car",
-     "score": 0.921,
+     "score": 0.918,
      "box": [
       730.7,
       49.3,
@@ -417,7 +412,7 @@
     },
     {
      "label": "truck",
-     "score": 0.477,
+     "score": 0.491,
      "box": [
       653.3,
       44.0,
@@ -426,8 +421,7 @@
      ]
     }
    ],
-   "bytes": 32120,
-   "hmac": "905e7e0df9da35164146f9dae5faea04431906ec5bd8be97dc900480c842182e"
+   "bytes": 32147
   },
   {
    "frame": 6,
@@ -435,30 +429,30 @@
     "impulse:median3",
     "lowlight:gamma+clahe"
    ],
-   "ms": 525.4,
+   "ms": 59.8,
    "timings": {
-    "diagnose+prefix": 63.2,
-    "resize": 6.6,
-    "restore": 213.6,
-    "detect": 232.4,
-    "segment": 6.5,
-    "protect": 0.8,
-    "compress": 2.3
+    "diagnose+prefix": 15.7,
+    "resize": 1.1,
+    "restore": 23.2,
+    "detect": 17.9,
+    "segment": 0.5,
+    "protect": 0.1,
+    "compress": 1.3
    },
    "detections": [
     {
      "label": "person",
-     "score": 0.855,
+     "score": 0.845,
      "box": [
       288.0,
       212.0,
       326.7,
-      298.7
+      300.0
      ]
     },
     {
      "label": "person",
-     "score": 0.831,
+     "score": 0.836,
      "box": [
       485.3,
       162.7,
@@ -468,7 +462,7 @@
     },
     {
      "label": "person",
-     "score": 0.809,
+     "score": 0.803,
      "box": [
       592.0,
       238.7,
@@ -478,7 +472,7 @@
     },
     {
      "label": "car",
-     "score": 0.916,
+     "score": 0.917,
      "box": [
       730.7,
       48.0,
@@ -488,17 +482,16 @@
     },
     {
      "label": "truck",
-     "score": 0.677,
+     "score": 0.67,
      "box": [
-      654.7,
+      653.3,
       42.7,
       720.0,
       97.3
      ]
     }
    ],
-   "bytes": 32124,
-   "hmac": "739928504a0b94ee816be939d210f2aaa45fa7f976688d89c42b13397de3bc52"
+   "bytes": 32224
   },
   {
    "frame": 7,
@@ -506,15 +499,15 @@
     "impulse:median3",
     "lowlight:gamma+clahe"
    ],
-   "ms": 516.9,
+   "ms": 60.6,
    "timings": {
-    "diagnose+prefix": 62.0,
-    "resize": 6.5,
-    "restore": 202.7,
-    "detect": 237.4,
-    "segment": 1.8,
-    "protect": 0.3,
-    "compress": 6.2
+    "diagnose+prefix": 15.9,
+    "resize": 1.9,
+    "restore": 22.7,
+    "detect": 18.2,
+    "segment": 0.5,
+    "protect": 0.1,
+    "compress": 1.3
    },
    "detections": [
     {
@@ -529,7 +522,7 @@
     },
     {
      "label": "person",
-     "score": 0.893,
+     "score": 0.882,
      "box": [
       584.0,
       237.3,
@@ -539,7 +532,7 @@
     },
     {
      "label": "person",
-     "score": 0.835,
+     "score": 0.82,
      "box": [
       482.7,
       164.0,
@@ -549,7 +542,7 @@
     },
     {
      "label": "car",
-     "score": 0.909,
+     "score": 0.91,
      "box": [
       730.7,
       49.3,
@@ -559,7 +552,7 @@
     },
     {
      "label": "truck",
-     "score": 0.763,
+     "score": 0.768,
      "box": [
       652.0,
       42.7,
@@ -568,8 +561,7 @@
      ]
     }
    ],
-   "bytes": 32022,
-   "hmac": "364cfa14780bba294869f6cb9430647a9b73f138922565163473eb71447c181b"
+   "bytes": 32028
   },
   {
    "frame": 8,
@@ -577,30 +569,40 @@
     "impulse:median3",
     "lowlight:gamma+clahe"
    ],
-   "ms": 518.1,
+   "ms": 57.9,
    "timings": {
-    "diagnose+prefix": 67.3,
-    "resize": 6.5,
-    "restore": 204.5,
-    "detect": 231.6,
-    "segment": 1.6,
-    "protect": 0.3,
-    "compress": 6.3
+    "diagnose+prefix": 15.7,
+    "resize": 1.4,
+    "restore": 22.4,
+    "detect": 16.7,
+    "segment": 0.4,
+    "protect": 0.1,
+    "compress": 1.2
    },
    "detections": [
     {
      "label": "person",
-     "score": 0.933,
+     "score": 0.943,
      "box": [
       301.3,
-      209.3,
+      208.0,
       332.0,
       296.0
      ]
     },
     {
      "label": "person",
-     "score": 0.858,
+     "score": 0.869,
+     "box": [
+      482.7,
+      161.3,
+      505.3,
+      241.3
+     ]
+    },
+    {
+     "label": "person",
+     "score": 0.841,
      "box": [
       574.7,
       237.3,
@@ -609,18 +611,8 @@
      ]
     },
     {
-     "label": "person",
-     "score": 0.856,
-     "box": [
-      481.3,
-      161.3,
-      505.3,
-      241.3
-     ]
-    },
-    {
      "label": "car",
-     "score": 0.881,
+     "score": 0.88,
      "box": [
       732.0,
       48.0,
@@ -630,7 +622,7 @@
     },
     {
      "label": "truck",
-     "score": 0.73,
+     "score": 0.737,
      "box": [
       653.3,
       44.0,
@@ -639,8 +631,7 @@
      ]
     }
    ],
-   "bytes": 31789,
-   "hmac": "8a5bc06b361421f64efeaad365d281ad05727bd0ccfa837114bf5bf3a91d0470"
+   "bytes": 31746
   },
   {
    "frame": 9,
@@ -648,20 +639,20 @@
     "impulse:median3",
     "lowlight:gamma+clahe"
    ],
-   "ms": 515.6,
+   "ms": 59.3,
    "timings": {
-    "diagnose+prefix": 64.6,
-    "resize": 6.6,
-    "restore": 208.0,
-    "detect": 227.9,
-    "segment": 1.8,
-    "protect": 0.4,
-    "compress": 6.2
+    "diagnose+prefix": 14.1,
+    "resize": 1.1,
+    "restore": 22.0,
+    "detect": 20.1,
+    "segment": 0.5,
+    "protect": 0.2,
+    "compress": 1.3
    },
    "detections": [
     {
      "label": "person",
-     "score": 0.96,
+     "score": 0.961,
      "box": [
       560.0,
       237.3,
@@ -671,7 +662,7 @@
     },
     {
      "label": "person",
-     "score": 0.795,
+     "score": 0.788,
      "box": [
       477.3,
       164.0,
@@ -681,17 +672,167 @@
     },
     {
      "label": "person",
-     "score": 0.704,
+     "score": 0.726,
      "box": [
       306.7,
-      205.3,
+      206.7,
       337.3,
-      290.7
+      292.0
      ]
     },
     {
      "label": "car",
-     "score": 0.907,
+     "score": 0.908,
+     "box": [
+      730.7,
+      48.0,
+      768.0,
+      93.3
+     ]
+    },
+    {
+     "label": "truck",
+     "score": 0.679,
+     "box": [
+      652.0,
+      42.7,
+      718.7,
+      97.3
+     ]
+    }
+   ],
+   "bytes": 31901
+  },
+  {
+   "frame": 10,
+   "actions": [
+    "impulse:median3",
+    "lowlight:gamma+clahe"
+   ],
+   "ms": 58.1,
+   "timings": {
+    "diagnose+prefix": 17.3,
+    "resize": 1.1,
+    "restore": 21.2,
+    "detect": 16.6,
+    "segment": 0.5,
+    "protect": 0.1,
+    "compress": 1.3
+   },
+   "detections": [
+    {
+     "label": "person",
+     "score": 0.974,
+     "box": [
+      316.0,
+      209.3,
+      352.0,
+      288.0
+     ]
+    },
+    {
+     "label": "person",
+     "score": 0.88,
+     "box": [
+      462.7,
+      168.0,
+      501.3,
+      246.7
+     ]
+    },
+    {
+     "label": "person",
+     "score": 0.726,
+     "box": [
+      546.7,
+      238.7,
+      578.7,
+      318.7
+     ]
+    },
+    {
+     "label": "car",
+     "score": 0.942,
+     "box": [
+      730.7,
+      49.3,
+      768.0,
+      94.7
+     ]
+    },
+    {
+     "label": "truck",
+     "score": 0.562,
+     "box": [
+      652.0,
+      42.7,
+      721.3,
+      96.0
+     ]
+    }
+   ],
+   "bytes": 32167
+  },
+  {
+   "frame": 11,
+   "actions": [
+    "impulse:median3",
+    "lowlight:gamma+clahe"
+   ],
+   "ms": 60.7,
+   "timings": {
+    "diagnose+prefix": 16.6,
+    "resize": 1.1,
+    "restore": 23.6,
+    "detect": 17.4,
+    "segment": 0.5,
+    "protect": 0.2,
+    "compress": 1.3
+   },
+   "detections": [
+    {
+     "label": "person",
+     "score": 0.972,
+     "box": [
+      320.0,
+      206.7,
+      356.0,
+      290.7
+     ]
+    },
+    {
+     "label": "person",
+     "score": 0.911,
+     "box": [
+      542.7,
+      234.7,
+      568.0,
+      321.3
+     ]
+    },
+    {
+     "label": "person",
+     "score": 0.884,
+     "box": [
+      466.7,
+      169.3,
+      492.0,
+      245.3
+     ]
+    },
+    {
+     "label": "person",
+     "score": 0.523,
+     "box": [
+      745.3,
+      304.0,
+      766.7,
+      412.0
+     ]
+    },
+    {
+     "label": "car",
+     "score": 0.906,
      "box": [
       730.7,
       48.0,
@@ -703,745 +844,6 @@
      "label": "truck",
      "score": 0.668,
      "box": [
-      652.0,
-      42.7,
-      718.7,
-      97.3
-     ]
-    }
-   ],
-   "bytes": 31899,
-   "hmac": "cd1fb8d4c2f6ae12d8269eb016286b0df955440c43cecc91a57f31d69c0ffce9"
-  },
-  {
-   "frame": 10,
-   "actions": [
-    "impulse:median3",
-    "lowlight:gamma+clahe"
-   ],
-   "ms": 519.0,
-   "timings": {
-    "diagnose+prefix": 69.2,
-    "resize": 2.5,
-    "restore": 209.1,
-    "detect": 229.9,
-    "segment": 6.0,
-    "protect": 0.2,
-    "compress": 2.1
-   },
-   "detections": [
-    {
-     "label": "person",
-     "score": 0.973,
-     "box": [
-      316.0,
-      209.3,
-      352.0,
-      288.0
-     ]
-    },
-    {
-     "label": "person",
-     "score": 0.888,
-     "box": [
-      462.7,
-      168.0,
-      500.0,
-      246.7
-     ]
-    },
-    {
-     "label": "person",
-     "score": 0.726,
-     "box": [
-      548.0,
-      238.7,
-      580.0,
-      318.7
-     ]
-    },
-    {
-     "label": "car",
-     "score": 0.938,
-     "box": [
-      730.7,
-      49.3,
-      768.0,
-      96.0
-     ]
-    },
-    {
-     "label": "truck",
-     "score": 0.572,
-     "box": [
-      652.0,
-      42.7,
-      721.3,
-      96.0
-     ]
-    }
-   ],
-   "bytes": 32120,
-   "hmac": "422adb9f22d0e2f7a14d7472635faadb8716465c95ae6a56d719f78139e51562"
-  },
-  {
-   "frame": 11,
-   "actions": [
-    "impulse:median3",
-    "lowlight:gamma+clahe"
-   ],
-   "ms": 520.1,
-   "timings": {
-    "diagnose+prefix": 63.7,
-    "resize": 2.5,
-    "restore": 206.7,
-    "detect": 238.3,
-    "segment": 2.3,
-    "protect": 0.3,
-    "compress": 6.3
-   },
-   "detections": [
-    {
-     "label": "person",
-     "score": 0.972,
-     "box": [
-      320.0,
-      206.7,
-      354.7,
-      290.7
-     ]
-    },
-    {
-     "label": "person",
-     "score": 0.913,
-     "box": [
-      542.7,
-      234.7,
-      568.0,
-      321.3
-     ]
-    },
-    {
-     "label": "person",
-     "score": 0.86,
-     "box": [
-      465.3,
-      169.3,
-      492.0,
-      245.3
-     ]
-    },
-    {
-     "label": "person",
-     "score": 0.514,
-     "box": [
-      745.3,
-      304.0,
-      766.7,
-      412.0
-     ]
-    },
-    {
-     "label": "car",
-     "score": 0.911,
-     "box": [
-      730.7,
-      49.3,
-      768.0,
-      94.7
-     ]
-    },
-    {
-     "label": "truck",
-     "score": 0.681,
-     "box": [
-      652.0,
-      42.7,
-      720.0,
-      98.7
-     ]
-    }
-   ],
-   "bytes": 33326,
-   "hmac": "4dca5c7684674264ba68c2d87c0e6e3d376b01ffdbfa3a70a29d8b346c6d153e"
-  },
-  {
-   "frame": 12,
-   "actions": [
-    "impulse:median3",
-    "lowlight:gamma+clahe"
-   ],
-   "ms": 510.6,
-   "timings": {
-    "diagnose+prefix": 64.3,
-    "resize": 6.5,
-    "restore": 201.0,
-    "detect": 225.9,
-    "segment": 6.4,
-    "protect": 0.3,
-    "compress": 6.2
-   },
-   "detections": [
-    {
-     "label": "person",
-     "score": 0.959,
-     "box": [
-      325.3,
-      201.3,
-      357.3,
-      290.7
-     ]
-    },
-    {
-     "label": "person",
-     "score": 0.905,
-     "box": [
-      530.7,
-      237.3,
-      561.3,
-      322.7
-     ]
-    },
-    {
-     "label": "person",
-     "score": 0.81,
-     "box": [
-      740.0,
-      289.3,
-      766.7,
-      406.7
-     ]
-    },
-    {
-     "label": "person",
-     "score": 0.703,
-     "box": [
-      465.3,
-      165.3,
-      485.3,
-      245.3
-     ]
-    },
-    {
-     "label": "car",
-     "score": 0.927,
-     "box": [
-      730.7,
-      48.0,
-      768.0,
-      93.3
-     ]
-    },
-    {
-     "label": "truck",
-     "score": 0.586,
-     "box": [
-      650.7,
-      44.0,
-      720.0,
-      98.7
-     ]
-    }
-   ],
-   "bytes": 33564,
-   "hmac": "187f3ad3fe3a57331e2142774f81af8bdb02d337591997bf8ea3ecd9e4bc5314"
-  },
-  {
-   "frame": 13,
-   "actions": [
-    "impulse:median3",
-    "lowlight:gamma+clahe"
-   ],
-   "ms": 514.2,
-   "timings": {
-    "diagnose+prefix": 63.3,
-    "resize": 6.5,
-    "restore": 205.2,
-    "detect": 230.3,
-    "segment": 2.3,
-    "protect": 0.3,
-    "compress": 6.2
-   },
-   "detections": [
-    {
-     "label": "person",
-     "score": 0.905,
-     "box": [
-      456.0,
-      173.3,
-      478.7,
-      246.7
-     ]
-    },
-    {
-     "label": "person",
-     "score": 0.836,
-     "box": [
-      724.0,
-      292.0,
-      766.7,
-      405.3
-     ]
-    },
-    {
-     "label": "person",
-     "score": 0.689,
-     "box": [
-      333.3,
-      205.3,
-      365.3,
-      286.7
-     ]
-    },
-    {
-     "label": "person",
-     "score": 0.672,
-     "box": [
-      513.3,
-      237.3,
-      544.0,
-      321.3
-     ]
-    },
-    {
-     "label": "car",
-     "score": 0.905,
-     "box": [
-      730.7,
-      49.3,
-      768.0,
-      94.7
-     ]
-    },
-    {
-     "label": "truck",
-     "score": 0.687,
-     "box": [
-      652.0,
-      44.0,
-      718.7,
-      98.7
-     ]
-    }
-   ],
-   "bytes": 33654,
-   "hmac": "d0051229978f82bccb89691ae27f1f9890bdcde60801a7b7334206b934dc595f"
-  },
-  {
-   "frame": 14,
-   "actions": [
-    "impulse:median3",
-    "lowlight:gamma+clahe"
-   ],
-   "ms": 513.6,
-   "timings": {
-    "diagnose+prefix": 68.1,
-    "resize": 3.2,
-    "restore": 209.9,
-    "detect": 223.4,
-    "segment": 2.3,
-    "protect": 0.3,
-    "compress": 6.2
-   },
-   "detections": [
-    {
-     "label": "person",
-     "score": 0.902,
-     "box": [
-      722.7,
-      292.0,
-      766.7,
-      398.7
-     ]
-    },
-    {
-     "label": "person",
-     "score": 0.897,
-     "box": [
-      506.7,
-      234.7,
-      534.7,
-      321.3
-     ]
-    },
-    {
-     "label": "person",
-     "score": 0.838,
-     "box": [
-      449.3,
-      176.0,
-      476.0,
-      245.3
-     ]
-    },
-    {
-     "label": "person",
-     "score": 0.633,
-     "box": [
-      337.3,
-      197.3,
-      372.0,
-      282.7
-     ]
-    },
-    {
-     "label": "car",
-     "score": 0.881,
-     "box": [
-      730.7,
-      48.0,
-      768.0,
-      93.3
-     ]
-    },
-    {
-     "label": "truck",
-     "score": 0.667,
-     "box": [
-      650.7,
-      42.7,
-      717.3,
-      97.3
-     ]
-    }
-   ],
-   "bytes": 34028,
-   "hmac": "0ba05ec5906777b075a3b7a600ae480b23e2fb22b89ca3a7eb113540b63d52c5"
-  },
-  {
-   "frame": 15,
-   "actions": [
-    "impulse:median3",
-    "lowlight:gamma+clahe"
-   ],
-   "ms": 515.3,
-   "timings": {
-    "diagnose+prefix": 62.6,
-    "resize": 2.5,
-    "restore": 212.8,
-    "detect": 228.5,
-    "segment": 2.5,
-    "protect": 0.3,
-    "compress": 6.3
-   },
-   "detections": [
-    {
-     "label": "person",
-     "score": 0.886,
-     "box": [
-      340.0,
-      197.3,
-      376.0,
-      282.7
-     ]
-    },
-    {
-     "label": "person",
-     "score": 0.84,
-     "box": [
-      442.7,
-      168.0,
-      476.0,
-      250.7
-     ]
-    },
-    {
-     "label": "person",
-     "score": 0.796,
-     "box": [
-      496.0,
-      234.7,
-      525.3,
-      318.7
-     ]
-    },
-    {
-     "label": "person",
-     "score": 0.632,
-     "box": [
-      717.3,
-      286.7,
-      765.3,
-      396.0
-     ]
-    },
-    {
-     "label": "car",
-     "score": 0.884,
-     "box": [
-      730.7,
-      49.3,
-      768.0,
-      94.7
-     ]
-    },
-    {
-     "label": "truck",
-     "score": 0.713,
-     "box": [
-      653.3,
-      42.7,
-      721.3,
-      97.3
-     ]
-    }
-   ],
-   "bytes": 34438,
-   "hmac": "bbfc9ef846eadc4752de750468dbd9d15a73d334fce6a1cff5c53ff7475053e9"
-  },
-  {
-   "frame": 16,
-   "actions": [
-    "impulse:median3",
-    "lowlight:gamma+clahe"
-   ],
-   "ms": 508.4,
-   "timings": {
-    "diagnose+prefix": 63.5,
-    "resize": 6.5,
-    "restore": 202.0,
-    "detect": 227.2,
-    "segment": 6.6,
-    "protect": 0.4,
-    "compress": 2.1
-   },
-   "detections": [
-    {
-     "label": "person",
-     "score": 0.91,
-     "box": [
-      342.7,
-      198.7,
-      380.0,
-      281.3
-     ]
-    },
-    {
-     "label": "person",
-     "score": 0.866,
-     "box": [
-      441.3,
-      174.7,
-      464.0,
-      248.0
-     ]
-    },
-    {
-     "label": "person",
-     "score": 0.851,
-     "box": [
-      485.3,
-      237.3,
-      521.3,
-      318.7
-     ]
-    },
-    {
-     "label": "person",
-     "score": 0.782,
-     "box": [
-      717.3,
-      278.7,
-      753.3,
-      397.3
-     ]
-    },
-    {
-     "label": "car",
-     "score": 0.87,
-     "box": [
-      730.7,
-      49.3,
-      768.0,
-      94.7
-     ]
-    },
-    {
-     "label": "truck",
-     "score": 0.774,
-     "box": [
-      652.0,
-      44.0,
-      720.0,
-      98.7
-     ]
-    }
-   ],
-   "bytes": 34108,
-   "hmac": "3453d78a61f710ee3ebd2e3aca55aac2ed1fe77a8fb85ab36cdf13e0ac9e98e4"
-  },
-  {
-   "frame": 17,
-   "actions": [
-    "impulse:median3",
-    "lowlight:gamma+clahe"
-   ],
-   "ms": 512.3,
-   "timings": {
-    "diagnose+prefix": 64.1,
-    "resize": 6.6,
-    "restore": 201.6,
-    "detect": 230.5,
-    "segment": 2.8,
-    "protect": 0.3,
-    "compress": 6.4
-   },
-   "detections": [
-    {
-     "label": "person",
-     "score": 0.943,
-     "box": [
-      704.0,
-      280.0,
-      752.0,
-      389.3
-     ]
-    },
-    {
-     "label": "person",
-     "score": 0.933,
-     "box": [
-      472.0,
-      233.3,
-      508.0,
-      318.7
-     ]
-    },
-    {
-     "label": "person",
-     "score": 0.761,
-     "box": [
-      436.0,
-      170.7,
-      456.0,
-      244.0
-     ]
-    },
-    {
-     "label": "person",
-     "score": 0.692,
-     "box": [
-      353.3,
-      194.7,
-      386.7,
-      276.0
-     ]
-    },
-    {
-     "label": "person",
-     "score": 0.379,
-     "box": [
-      742.7,
-      281.3,
-      766.7,
-      388.0
-     ]
-    },
-    {
-     "label": "car",
-     "score": 0.926,
-     "box": [
-      730.7,
-      49.3,
-      768.0,
-      94.7
-     ]
-    },
-    {
-     "label": "truck",
-     "score": 0.625,
-     "box": [
-      652.0,
-      42.7,
-      720.0,
-      96.0
-     ]
-    }
-   ],
-   "bytes": 35639,
-   "hmac": "64a524f7361fe12b5975cae482743cdbc20660ebacf05737d4d41ab4368068f1"
-  },
-  {
-   "frame": 18,
-   "actions": [
-    "impulse:median3",
-    "lowlight:gamma+clahe"
-   ],
-   "ms": 519.8,
-   "timings": {
-    "diagnose+prefix": 64.4,
-    "resize": 6.5,
-    "restore": 210.8,
-    "detect": 228.7,
-    "segment": 2.8,
-    "protect": 4.4,
-    "compress": 2.3
-   },
-   "detections": [
-    {
-     "label": "person",
-     "score": 0.88,
-     "box": [
-      700.0,
-      277.3,
-      742.7,
-      389.3
-     ]
-    },
-    {
-     "label": "person",
-     "score": 0.814,
-     "box": [
-      462.7,
-      232.0,
-      494.7,
-      317.3
-     ]
-    },
-    {
-     "label": "person",
-     "score": 0.772,
-     "box": [
-      353.3,
-      194.7,
-      389.3,
-      274.7
-     ]
-    },
-    {
-     "label": "person",
-     "score": 0.754,
-     "box": [
-      738.7,
-      277.3,
-      768.0,
-      381.3
-     ]
-    },
-    {
-     "label": "person",
-     "score": 0.455,
-     "box": [
-      436.0,
-      172.0,
-      456.0,
-      240.0
-     ]
-    },
-    {
-     "label": "car",
-     "score": 0.861,
-     "box": [
-      730.7,
-      50.7,
-      768.0,
-      94.7
-     ]
-    },
-    {
-     "label": "truck",
-     "score": 0.712,
-     "box": [
       653.3,
       42.7,
       721.3,
@@ -1449,869 +851,7 @@
      ]
     }
    ],
-   "bytes": 35405,
-   "hmac": "427294e1295bff1da905a6d9ea7ddde08bff37d0c6a50789dcff13fe42fcd201"
-  },
-  {
-   "frame": 19,
-   "actions": [
-    "impulse:median3",
-    "lowlight:gamma+clahe"
-   ],
-   "ms": 519.4,
-   "timings": {
-    "diagnose+prefix": 68.8,
-    "resize": 2.5,
-    "restore": 207.3,
-    "detect": 231.8,
-    "segment": 6.6,
-    "protect": 0.3,
-    "compress": 2.1
-   },
-   "detections": [
-    {
-     "label": "person",
-     "score": 0.807,
-     "box": [
-      457.3,
-      226.7,
-      484.0,
-      320.0
-     ]
-    },
-    {
-     "label": "person",
-     "score": 0.746,
-     "box": [
-      697.3,
-      270.7,
-      732.0,
-      382.7
-     ]
-    },
-    {
-     "label": "person",
-     "score": 0.719,
-     "box": [
-      356.0,
-      194.7,
-      390.7,
-      276.0
-     ]
-    },
-    {
-     "label": "person",
-     "score": 0.708,
-     "box": [
-      732.0,
-      277.3,
-      765.3,
-      376.0
-     ]
-    },
-    {
-     "label": "car",
-     "score": 0.902,
-     "box": [
-      732.0,
-      48.0,
-      768.0,
-      93.3
-     ]
-    },
-    {
-     "label": "truck",
-     "score": 0.742,
-     "box": [
-      650.7,
-      42.7,
-      720.0,
-      96.0
-     ]
-    }
-   ],
-   "bytes": 34420,
-   "hmac": "1ab1c993b1f07120940eb48fe97b12e0ab80289dd6dcc07dfc8df19fb656ea58"
-  },
-  {
-   "frame": 20,
-   "actions": [
-    "impulse:median3",
-    "lowlight:gamma+clahe"
-   ],
-   "ms": 512.6,
-   "timings": {
-    "diagnose+prefix": 63.9,
-    "resize": 2.7,
-    "restore": 208.2,
-    "detect": 229.1,
-    "segment": 2.3,
-    "protect": 0.3,
-    "compress": 6.2
-   },
-   "detections": [
-    {
-     "label": "person",
-     "score": 0.969,
-     "box": [
-      688.0,
-      272.0,
-      721.3,
-      374.7
-     ]
-    },
-    {
-     "label": "person",
-     "score": 0.908,
-     "box": [
-      440.0,
-      230.7,
-      474.7,
-      317.3
-     ]
-    },
-    {
-     "label": "person",
-     "score": 0.781,
-     "box": [
-      360.0,
-      194.7,
-      397.3,
-      274.7
-     ]
-    },
-    {
-     "label": "person",
-     "score": 0.648,
-     "box": [
-      725.3,
-      277.3,
-      757.3,
-      362.7
-     ]
-    },
-    {
-     "label": "car",
-     "score": 0.905,
-     "box": [
-      730.7,
-      48.0,
-      768.0,
-      93.3
-     ]
-    },
-    {
-     "label": "truck",
-     "score": 0.742,
-     "box": [
-      652.0,
-      44.0,
-      720.0,
-      96.0
-     ]
-    }
-   ],
-   "bytes": 34145,
-   "hmac": "60a6a10e776bfed8f22c654f69af59450891b0bea9455950e377358b4c7e6c13"
-  },
-  {
-   "frame": 21,
-   "actions": [
-    "impulse:median3",
-    "lowlight:gamma+clahe"
-   ],
-   "ms": 515.4,
-   "timings": {
-    "diagnose+prefix": 63.6,
-    "resize": 2.5,
-    "restore": 202.8,
-    "detect": 233.8,
-    "segment": 2.4,
-    "protect": 0.3,
-    "compress": 10.1
-   },
-   "detections": [
-    {
-     "label": "person",
-     "score": 0.985,
-     "box": [
-      681.3,
-      270.7,
-      720.0,
-      372.0
-     ]
-    },
-    {
-     "label": "person",
-     "score": 0.869,
-     "box": [
-      364.0,
-      188.0,
-      396.0,
-      276.0
-     ]
-    },
-    {
-     "label": "person",
-     "score": 0.682,
-     "box": [
-      436.0,
-      232.0,
-      465.3,
-      314.7
-     ]
-    },
-    {
-     "label": "person",
-     "score": 0.617,
-     "box": [
-      718.7,
-      268.0,
-      750.7,
-      365.3
-     ]
-    },
-    {
-     "label": "car",
-     "score": 0.862,
-     "box": [
-      730.7,
-      49.3,
-      768.0,
-      96.0
-     ]
-    },
-    {
-     "label": "truck",
-     "score": 0.801,
-     "box": [
-      654.7,
-      42.7,
-      720.0,
-      97.3
-     ]
-    }
-   ],
-   "bytes": 34147,
-   "hmac": "5d3d1d27148cbf660cbd1f04b43b40f34a0d284927895e24267afdb580070625"
-  },
-  {
-   "frame": 22,
-   "actions": [
-    "impulse:median3",
-    "lowlight:gamma+clahe"
-   ],
-   "ms": 527.9,
-   "timings": {
-    "diagnose+prefix": 76.2,
-    "resize": 6.5,
-    "restore": 201.5,
-    "detect": 234.5,
-    "segment": 2.6,
-    "protect": 0.3,
-    "compress": 6.4
-   },
-   "detections": [
-    {
-     "label": "person",
-     "score": 0.922,
-     "box": [
-      672.0,
-      269.3,
-      714.7,
-      370.7
-     ]
-    },
-    {
-     "label": "person",
-     "score": 0.695,
-     "box": [
-      709.3,
-      272.0,
-      753.3,
-      366.7
-     ]
-    },
-    {
-     "label": "person",
-     "score": 0.558,
-     "box": [
-      366.7,
-      197.3,
-      396.0,
-      269.3
-     ]
-    },
-    {
-     "label": "person",
-     "score": 0.533,
-     "box": [
-      433.3,
-      240.0,
-      458.7,
-      310.7
-     ]
-    },
-    {
-     "label": "car",
-     "score": 0.912,
-     "box": [
-      730.7,
-      49.3,
-      768.0,
-      94.7
-     ]
-    },
-    {
-     "label": "truck",
-     "score": 0.646,
-     "box": [
-      650.7,
-      44.0,
-      717.3,
-      98.7
-     ]
-    }
-   ],
-   "bytes": 34236,
-   "hmac": "d9b6240197dfd1bc1743691890cf002257e2f18d9b651f0d3d9243655e909130"
-  },
-  {
-   "frame": 23,
-   "actions": [
-    "impulse:median3",
-    "lowlight:gamma+clahe"
-   ],
-   "ms": 510.1,
-   "timings": {
-    "diagnose+prefix": 64.6,
-    "resize": 2.6,
-    "restore": 202.7,
-    "detect": 230.6,
-    "segment": 7.0,
-    "protect": 0.3,
-    "compress": 2.2
-   },
-   "detections": [
-    {
-     "label": "person",
-     "score": 0.94,
-     "box": [
-      666.7,
-      261.3,
-      702.7,
-      370.7
-     ]
-    },
-    {
-     "label": "person",
-     "score": 0.916,
-     "box": [
-      698.7,
-      269.3,
-      737.3,
-      362.7
-     ]
-    },
-    {
-     "label": "person",
-     "score": 0.767,
-     "box": [
-      374.7,
-      182.7,
-      405.3,
-      268.0
-     ]
-    },
-    {
-     "label": "person",
-     "score": 0.757,
-     "box": [
-      406.7,
-      168.0,
-      457.3,
-      308.0
-     ]
-    },
-    {
-     "label": "car",
-     "score": 0.883,
-     "box": [
-      730.7,
-      49.3,
-      768.0,
-      94.7
-     ]
-    },
-    {
-     "label": "truck",
-     "score": 0.717,
-     "box": [
-      652.0,
-      42.7,
-      720.0,
-      97.3
-     ]
-    }
-   ],
-   "bytes": 35540,
-   "hmac": "3397395292c6ccdfd7c61878bade6de181c57b768b1668271c029b8cdc63e9bd"
-  },
-  {
-   "frame": 24,
-   "actions": [
-    "impulse:median3",
-    "lowlight:gamma+clahe"
-   ],
-   "ms": 513.0,
-   "timings": {
-    "diagnose+prefix": 62.0,
-    "resize": 6.5,
-    "restore": 204.5,
-    "detect": 230.7,
-    "segment": 6.8,
-    "protect": 0.3,
-    "compress": 2.2
-   },
-   "detections": [
-    {
-     "label": "person",
-     "score": 0.876,
-     "box": [
-      694.7,
-      266.7,
-      730.7,
-      361.3
-     ]
-    },
-    {
-     "label": "person",
-     "score": 0.778,
-     "box": [
-      374.7,
-      182.7,
-      408.0,
-      268.0
-     ]
-    },
-    {
-     "label": "person",
-     "score": 0.746,
-     "box": [
-      404.0,
-      170.7,
-      450.7,
-      308.0
-     ]
-    },
-    {
-     "label": "person",
-     "score": 0.643,
-     "box": [
-      662.7,
-      260.0,
-      700.0,
-      365.3
-     ]
-    },
-    {
-     "label": "car",
-     "score": 0.899,
-     "box": [
-      730.7,
-      49.3,
-      768.0,
-      94.7
-     ]
-    },
-    {
-     "label": "truck",
-     "score": 0.68,
-     "box": [
-      652.0,
-      42.7,
-      718.7,
-      97.3
-     ]
-    }
-   ],
-   "bytes": 35292,
-   "hmac": "5bb83e29ef03dadbd0b70a90500aff96fbd72a81c1cebcf1f57f49504efb175a"
-  },
-  {
-   "frame": 25,
-   "actions": [
-    "impulse:median3",
-    "lowlight:gamma+clahe"
-   ],
-   "ms": 523.8,
-   "timings": {
-    "diagnose+prefix": 66.1,
-    "resize": 6.9,
-    "restore": 204.7,
-    "detect": 231.8,
-    "segment": 7.5,
-    "protect": 0.4,
-    "compress": 6.4
-   },
-   "detections": [
-    {
-     "label": "person",
-     "score": 0.717,
-     "box": [
-      658.7,
-      260.0,
-      692.0,
-      364.0
-     ]
-    },
-    {
-     "label": "person",
-     "score": 0.649,
-     "box": [
-      374.7,
-      180.0,
-      410.7,
-      268.0
-     ]
-    },
-    {
-     "label": "person",
-     "score": 0.582,
-     "box": [
-      677.3,
-      256.0,
-      710.7,
-      358.7
-     ]
-    },
-    {
-     "label": "person",
-     "score": 0.578,
-     "box": [
-      694.7,
-      261.3,
-      726.7,
-      353.3
-     ]
-    },
-    {
-     "label": "person",
-     "score": 0.422,
-     "box": [
-      402.7,
-      168.0,
-      449.3,
-      306.7
-     ]
-    },
-    {
-     "label": "car",
-     "score": 0.937,
-     "box": [
-      730.7,
-      50.7,
-      768.0,
-      94.7
-     ]
-    },
-    {
-     "label": "truck",
-     "score": 0.657,
-     "box": [
-      653.3,
-      42.7,
-      720.0,
-      97.3
-     ]
-    }
-   ],
-   "bytes": 36690,
-   "hmac": "993c24db11f72d8ff4feed835ce6aedb26fe4042815046038683aa3fe53fafe8"
-  },
-  {
-   "frame": 26,
-   "actions": [
-    "impulse:median3",
-    "lowlight:gamma+clahe"
-   ],
-   "ms": 539.1,
-   "timings": {
-    "diagnose+prefix": 64.4,
-    "resize": 6.5,
-    "restore": 222.4,
-    "detect": 237.0,
-    "segment": 2.0,
-    "protect": 0.4,
-    "compress": 6.2
-   },
-   "detections": [
-    {
-     "label": "person",
-     "score": 0.868,
-     "box": [
-      656.0,
-      260.0,
-      688.0,
-      364.0
-     ]
-    },
-    {
-     "label": "person",
-     "score": 0.81,
-     "box": [
-      373.3,
-      181.3,
-      408.0,
-      270.7
-     ]
-    },
-    {
-     "label": "person",
-     "score": 0.738,
-     "box": [
-      690.7,
-      257.3,
-      724.0,
-      356.0
-     ]
-    },
-    {
-     "label": "car",
-     "score": 0.897,
-     "box": [
-      730.7,
-      49.3,
-      768.0,
-      96.0
-     ]
-    },
-    {
-     "label": "truck",
-     "score": 0.728,
-     "box": [
-      652.0,
-      41.3,
-      717.3,
-      97.3
-     ]
-    }
-   ],
-   "bytes": 32670,
-   "hmac": "ccde6b1c3c6acd71eeb09042f54d7ff5557a936aba2896cc47ff647678b7624e"
-  },
-  {
-   "frame": 27,
-   "actions": [
-    "impulse:median3",
-    "lowlight:gamma+clahe"
-   ],
-   "ms": 522.9,
-   "timings": {
-    "diagnose+prefix": 70.7,
-    "resize": 7.2,
-    "restore": 202.1,
-    "detect": 234.3,
-    "segment": 2.0,
-    "protect": 0.3,
-    "compress": 6.2
-   },
-   "detections": [
-    {
-     "label": "person",
-     "score": 0.804,
-     "box": [
-      681.3,
-      256.0,
-      721.3,
-      358.7
-     ]
-    },
-    {
-     "label": "person",
-     "score": 0.795,
-     "box": [
-      649.3,
-      253.3,
-      686.7,
-      360.0
-     ]
-    },
-    {
-     "label": "person",
-     "score": 0.637,
-     "box": [
-      373.3,
-      178.7,
-      410.7,
-      269.3
-     ]
-    },
-    {
-     "label": "car",
-     "score": 0.887,
-     "box": [
-      732.0,
-      48.0,
-      768.0,
-      94.7
-     ]
-    },
-    {
-     "label": "truck",
-     "score": 0.728,
-     "box": [
-      653.3,
-      41.3,
-      718.7,
-      97.3
-     ]
-    }
-   ],
-   "bytes": 33101,
-   "hmac": "3796c8a478b29b11322d756175a37f625ffc1a0a0f0b0fb8d479560a3d3a034d"
-  },
-  {
-   "frame": 28,
-   "actions": [
-    "impulse:median3",
-    "lowlight:gamma+clahe"
-   ],
-   "ms": 514.8,
-   "timings": {
-    "diagnose+prefix": 64.6,
-    "resize": 6.5,
-    "restore": 204.2,
-    "detect": 230.9,
-    "segment": 2.1,
-    "protect": 0.3,
-    "compress": 6.2
-   },
-   "detections": [
-    {
-     "label": "person",
-     "score": 0.913,
-     "box": [
-      637.3,
-      253.3,
-      677.3,
-      353.3
-     ]
-    },
-    {
-     "label": "person",
-     "score": 0.901,
-     "box": [
-      672.0,
-      250.7,
-      708.0,
-      346.7
-     ]
-    },
-    {
-     "label": "person",
-     "score": 0.759,
-     "box": [
-      376.0,
-      180.0,
-      412.0,
-      260.0
-     ]
-    },
-    {
-     "label": "car",
-     "score": 0.897,
-     "box": [
-      732.0,
-      49.3,
-      768.0,
-      94.7
-     ]
-    },
-    {
-     "label": "truck",
-     "score": 0.669,
-     "box": [
-      652.0,
-      42.7,
-      722.7,
-      96.0
-     ]
-    }
-   ],
-   "bytes": 32933,
-   "hmac": "ce9e00ff29b37585b1fe1c19fa4bdba8231cec2c42b5cc69a0560fa6f7bf6f44"
-  },
-  {
-   "frame": 29,
-   "actions": [
-    "impulse:median3",
-    "lowlight:gamma+clahe"
-   ],
-   "ms": 515.2,
-   "timings": {
-    "diagnose+prefix": 65.1,
-    "resize": 6.5,
-    "restore": 206.6,
-    "detect": 228.6,
-    "segment": 1.9,
-    "protect": 0.4,
-    "compress": 6.1
-   },
-   "detections": [
-    {
-     "label": "person",
-     "score": 0.896,
-     "box": [
-      670.7,
-      250.7,
-      702.7,
-      338.7
-     ]
-    },
-    {
-     "label": "person",
-     "score": 0.888,
-     "box": [
-      634.7,
-      252.0,
-      669.3,
-      352.0
-     ]
-    },
-    {
-     "label": "person",
-     "score": 0.867,
-     "box": [
-      376.0,
-      173.3,
-      410.7,
-      261.3
-     ]
-    },
-    {
-     "label": "car",
-     "score": 0.917,
-     "box": [
-      732.0,
-      49.3,
-      768.0,
-      94.7
-     ]
-    },
-    {
-     "label": "truck",
-     "score": 0.576,
-     "box": [
-      652.0,
-      44.0,
-      721.3,
-      98.7
-     ]
-    }
-   ],
-   "bytes": 32746,
-   "hmac": "be8c0338286ed40310a0ac38d66cb378fa79ab0c1eb01de340ea1b405dbdee31"
+   "bytes": 33361
   }
  ]
 }

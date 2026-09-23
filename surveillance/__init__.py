@@ -1,2 +1,2 @@
-"""Smart City Surveillance - Digital Image Processing pipeline (CS406, Option 1)."""
+"""Smart City Surveillance - an adaptive Digital Image Processing pipeline."""
 __version__ = "1.0.0"

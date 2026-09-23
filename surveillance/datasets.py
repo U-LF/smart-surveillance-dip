@@ -125,6 +125,15 @@ def available_caviar(root: Path = CAVIAR_DIR):
     return sorted(d.name for d in root.iterdir() if d.is_dir() and any(d.rglob("*.jpg")))
 
 
+def video_fps(source, default: float = 15.0) -> float:
+    """Frame rate of a file / stream / webcam, `default` if it cannot be read
+    (webcams and some RTSP streams report 0)."""
+    cap = cv2.VideoCapture(int(source) if str(source).isdigit() else str(source))
+    fps = cap.get(cv2.CAP_PROP_FPS) if cap.isOpened() else 0.0
+    cap.release()
+    return float(fps) if 1.0 <= fps <= 240.0 else default
+
+
 def iter_video(source, max_frames: int | None = None, scale: float = 1.0):
     """Yield (index, frame) from a file path, RTSP URL or webcam index."""
     cap = cv2.VideoCapture(int(source) if str(source).isdigit() else str(source))

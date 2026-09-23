@@ -15,14 +15,18 @@ Reliability measures
   * downloads go to a .part file and are renamed only when complete;
   * retries with back-off; resumes are skipped if the verified target exists;
   * integrity: MD5 for model weights, file-count checks for Penn-Fudan
-    (170/170/170), XML parse + frame-count checks for CAVIAR.
-Only the Python standard library is used, so this runs before `pip install`.
+    (170/170/170), XML parse + frame-count checks for CAVIAR;
+  * TLS: certifi's CA bundle when available, else the system trust store, so a
+    stock python.org install on macOS (which ships no roots) still works.
+Only the standard library is required, so this runs before `pip install`;
+certifi is used opportunistically if it is already present.
 """
 from __future__ import annotations
 
 import argparse
 import hashlib
 import shutil
+import ssl
 import sys
 import tarfile
 import time
@@ -35,7 +39,25 @@ from surveillance.config import (CAVIAR_DEFAULT, CAVIAR_DIR, CAVIAR_SEQUENCES, D
                                  MODEL_DIR, MODEL_MD5, MODEL_SOURCES, PENNFUDAN_DIR,
                                  PENNFUDAN_EXPECTED, PENNFUDAN_SOURCES, VIDEO_DIR, VIDEO_SOURCES)
 
-UA = {"User-Agent": "Mozilla/5.0 (CS406 DIP project downloader)"}
+UA = {"User-Agent": "Mozilla/5.0 (smart-surveillance dataset downloader)"}
+
+
+def _ssl_context() -> ssl.SSLContext:
+    """TLS context with a usable CA bundle.
+
+    A stock python.org install on macOS ships no root certificates, so every
+    https download dies with CERTIFICATE_VERIFY_FAILED until the user runs
+    'Install Certificates.command'. certifi (a pip dependency of the project)
+    carries the Mozilla bundle, so prefer it and fall back to the system store.
+    """
+    try:
+        import certifi
+        return ssl.create_default_context(cafile=certifi.where())
+    except ImportError:
+        return ssl.create_default_context()
+
+
+SSL_CTX = _ssl_context()
 
 
 def human(n: float) -> str:
@@ -52,7 +74,8 @@ def fetch(url: str, dest: Path, retries: int = 3, timeout: int = 60) -> bool:
     for attempt in range(1, retries + 1):
         try:
             req = urllib.request.Request(url, headers=UA)
-            with urllib.request.urlopen(req, timeout=timeout) as r, open(part, "wb") as f:
+            with urllib.request.urlopen(req, timeout=timeout, context=SSL_CTX) as r, \
+                    open(part, "wb") as f:
                 total = int(r.headers.get("Content-Length") or 0)
                 done, t0 = 0, time.time()
                 while True:

@@ -68,6 +68,26 @@ T_DARK_REGIONS = 0.30  # fraction of 8x8 tiles darker than 40 (shadows / lamp po
 T_LOST = 0.002         # pixels in all-black 16x16 blocks: clean 0, 3% loss ~ 0.028
 
 
+def repair_pixel_defects(img, diag, profile):
+    """Defects that must be repaired at native resolution, before any resize.
+
+    Area resampling would average impulses and lost blocks into blobs that no
+    later filter can identify. Both `restore()` and `process()` call this one
+    function so the two entry points can never disagree about the repair.
+    """
+    actions, out = [], img
+    if diag.lost_block_ratio > T_LOST:
+        out = R.reconstruct_lost_blocks(out)
+        actions.append("inpaint")
+    if diag.impulse_ratio > T_IMPULSE:
+        if profile.impulse == "adaptive_median" or diag.impulse_ratio > 0.1:
+            out = SP.adaptive_median_filter(out, 7)
+        else:
+            out = SP.median_filter(out, 3 if profile.impulse == "median3" else 5)
+        actions.append(f"impulse:{profile.impulse}")
+    return out, actions
+
+
 @dataclass
 class PipelineResult:
     enhanced: np.ndarray
@@ -107,18 +127,7 @@ class SurveillancePipeline:
         """Adaptive restoration; returns (image, actions, diagnostics)."""
         p = self.profile
         diag = diag or R.diagnose(img)
-        actions, out = [], img
-
-        if diag.lost_block_ratio > T_LOST:
-            out = R.reconstruct_lost_blocks(out)
-            actions.append("inpaint")
-
-        if diag.impulse_ratio > T_IMPULSE:
-            if p.impulse == "adaptive_median" or diag.impulse_ratio > 0.1:
-                out = SP.adaptive_median_filter(out, 7)
-            else:
-                out = SP.median_filter(out, 3 if p.impulse == "median3" else 5)
-            actions.append(f"impulse:{p.impulse}")
+        out, actions = repair_pixel_defects(img, diag, p)
 
         if p.periodic:
             out2, peaks = F.remove_periodic_noise(out)
@@ -162,15 +171,7 @@ class SurveillancePipeline:
         # filter can identify afterwards (order matters - see report Sec. IV).
         with Timer() as tm:
             diag = R.diagnose(frame)
-            pre_actions, work = [], frame
-            if diag.lost_block_ratio > T_LOST:
-                work = R.reconstruct_lost_blocks(work)
-                pre_actions.append("inpaint")
-            if diag.impulse_ratio > T_IMPULSE:
-                work = SP.adaptive_median_filter(work, 7) if (p.impulse == "adaptive_median"
-                                                              or diag.impulse_ratio > 0.1) \
-                    else SP.median_filter(work, 3)
-                pre_actions.append(f"impulse:{p.impulse}")
+            work, pre_actions = repair_pixel_defects(frame, diag, p)
         t["diagnose+prefix"] = tm.ms
         with Timer() as tm:
             if p.scale != 1.0:

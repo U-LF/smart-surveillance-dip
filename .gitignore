@@ -1,45 +1,35 @@
-# ---------------------------------------------------------------- Python
+# Python
 __pycache__/
 *.py[cod]
-*$py.class
-*.egg-info/
-.eggs/
-build/
-dist/
-
-# ---------------------------------------------------------------- Environments
-.venv/
-venv/
-env/
-ENV/
-.python-version
-
-# ---------------------------------------------------------------- Tooling caches
 .pytest_cache/
-.mypy_cache/
-.ruff_cache/
-.ipynb_checkpoints/
-.coverage
-htmlcov/
 
-# ---------------------------------------------------------------- Editors / OS
-.vscode/
-.idea/
-*.swp
+# Virtual environment
+.venv/
+
+# macOS
 .DS_Store
-._*
-Thumbs.db
 
-# ---------------------------------------------------------------- Project data
-# Datasets and model weights are downloaded by scripts/download_data.py
-# (~190 MB) and must never be committed.
+# Datasets and model weights: ~250 MB, fetched by scripts/download_data.py.
+# Never committed; data/.gitkeep preserves the directory.
 data/*
 !data/.gitkeep
-# interrupted downloads from scripts/download_data.py
+
+# Interrupted downloads
 *.part
 
-# ---------------------------------------------------------------- Results
-# Tables (csv/md/tex) and figures (png/pdf) ARE committed: they are the
-# evidence cited in the report. Only heavy demo video output is excluded.
+# LaTeX build products (the committed PDF is report/smart-surveillance-report.pdf)
+report/build/
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.synctex.gz
+
+# Loose PDFs dropped at the repo root (reference material, not project output)
+/*.pdf
+
+# Demo video output (regenerate with demo.py). The tables in results/tables
+# and the figures in results/figures ARE tracked: they are the evidence the
+# report cites, and the README embeds the figures.
 results/demo/*.mp4
-results/demo/*.avi

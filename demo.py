@@ -24,7 +24,7 @@ import numpy as np
 
 from surveillance import degradation as D
 from surveillance.config import RESULTS_DIR
-from surveillance.datasets import iter_video
+from surveillance.datasets import iter_video, video_fps
 from surveillance.pipeline import PROFILES, SurveillancePipeline, overlay
 from surveillance.privacy import sign_frame
 from surveillance.segmentation import MotionSegmenter
@@ -53,6 +53,7 @@ def main():
     out_dir = Path(a.out)
     out_dir.mkdir(parents=True, exist_ok=True)
     stem = f"{Path(str(a.source)).stem}_{a.profile}" + (f"_{a.degrade}" if a.degrade else "")
+    out_fps = video_fps(a.source)
     writer, log, fps_ema = None, [], None
 
     for i, frame in iter_video(a.source, max_frames=a.max_frames):
@@ -69,8 +70,8 @@ def main():
         cv2.putText(left, "camera input", (6, 16), cv2.FONT_HERSHEY_SIMPLEX, 0.45, (0, 255, 255), 1)
         canvas = np.hstack([left, vis])
         if writer is None:
-            writer = cv2.VideoWriter(str(out_dir / f"{stem}.mp4"), cv2.VideoWriter_fourcc(*"mp4v"), 15,
-                                     (canvas.shape[1], canvas.shape[0]))
+            writer = cv2.VideoWriter(str(out_dir / f"{stem}.mp4"), cv2.VideoWriter_fourcc(*"mp4v"),
+                                     out_fps, (canvas.shape[1], canvas.shape[0]))
         writer.write(canvas)
         entry = {"frame": i, "actions": res.actions, "ms": round(res.total_ms, 1),
                  "timings": {k: round(v, 1) for k, v in res.timings.items()},
