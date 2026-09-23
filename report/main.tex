@@ -18,6 +18,10 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage{url}
 
+% IEEEtran's conference mode locks out \thanks; re-enable it so the
+% repository link can sit in a footnote instead of the title block
+\IEEEoverridecommandlockouts
+
 \graphicspath{{figures/}}
 
 % tighter float packing - keeps a float-heavy paper from spilling pages
@@ -39,10 +43,19 @@
 Smart-City Surveillance under Noise, Low Light,\\
 Interference and Transmission Loss}
 
-\author{\IEEEauthorblockN{Digital Image Processing}
-\IEEEauthorblockA{Smart City Surveillance System\\
-Source code and reproducible results: \texttt{https://github.com/}\\
-\textit{(replace with your repository and Overleaf links)}}}
+\author{%
+\IEEEauthorblockN{Muhammad Abdullah Akram}
+\IEEEauthorblockA{F2022065063}
+\and
+\IEEEauthorblockN{Gulshan Aslam}
+\IEEEauthorblockA{F2022065206}
+\and
+\IEEEauthorblockN{Laiba Saeed}
+\IEEEauthorblockA{F2022065207}
+\and
+\IEEEauthorblockN{Jawad Ahmad}
+\IEEEauthorblockA{F2022065111}
+\thanks{Code and data: \url{https://github.com/U-LF/smart-surveillance-dip}}}
 
 \maketitle
 

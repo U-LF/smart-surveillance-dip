@@ -44,7 +44,7 @@ from the numbers the experiments produced.
 
 - The document is exactly **10 pages**, double column, US Letter — the IEEE conference
   standard that `IEEEtran` produces by default.
-- The author block at the top of `main.tex` is a placeholder: add your names, affiliation
-  and the repository / Overleaf links before submitting.
+- The author block at the top of `main.tex` carries the four team members with their
+  student IDs and the repository link. Add the Overleaf link there before submitting.
 - Every number quoted in the text comes from `results/tables/`; run
   `python scripts/summarize_results.py` to print them all side by side.

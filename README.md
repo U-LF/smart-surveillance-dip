@@ -2,7 +2,7 @@
 
 **An adaptive digital image processing pipeline for CCTV under noise, low light, interference, blur and transmission loss.**
 
-Digital Image Processing
+Digital Image Processing · <https://github.com/U-LF/smart-surveillance-dip>
 
 Islamabad's public-space surveillance network struggles with poor image quality, noisy
 environments and varying lighting, which makes pedestrians and vehicles hard to identify. This
